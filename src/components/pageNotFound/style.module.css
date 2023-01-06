@@ -1,0 +1,16 @@
+@font-face {
+    font-family: poppines;
+    src: url(../../Static/Poppins-Regular.ttf);
+}
+
+.nopage{
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-top: 7rem;
+    background-color: var(--part1-background);
+}

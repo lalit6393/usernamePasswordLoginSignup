@@ -1,0 +1,380 @@
+@font-face {
+    font-family: volkhov;
+    src: url(../../Static/Volkhov-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppines;
+    src: url(../../Static/Poppins-Regular.ttf);
+}
+
+.create{
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 4rem;
+    background-color:var(--part1-background);
+}
+
+.part1{
+    box-sizing: border-box;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color:var(--part1-background);
+}
+
+.part2{
+    background-color: var(--part2-background);
+    box-sizing: border-box;
+    width: 60%;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.part2ContentPage{
+    /* background-color: aquamarine; */
+    max-width: 60rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardPage{
+    background-color: var(--part2-background);
+    box-shadow: 0 1px 2px var(--box-shadow);
+    box-sizing: border-box;
+    width: 25rem;
+    min-width: 25rem;
+    border-radius: 5px;
+}
+
+.card{
+    box-sizing: border-box;
+    padding: 1.2rem;
+}
+
+.image{
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 1, 1);
+    overflow: hidden;
+}
+
+.image>img{
+    height: auto;
+    width: 100%;
+}
+
+.title{
+    color: var(--text-black-white);
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: poppines;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 1.1rem 0rem 0.1rem 0rem;
+}
+
+.description{
+    color: rgb(113, 113, 113);
+    font-size: 1.3rem;
+    font-family: poppines, sans-serif;
+    text-align: start;
+}
+
+.date{
+    color: var(--text-black-white);
+    font-size: 1.25rem;
+    font-family: poppines, sans-serif;
+    text-align: start;
+    background-color: var(--part1-background);
+    box-sizing: border-box;
+    padding: 0.4rem 1rem 0.2rem 1rem;
+    border-radius: 2px;
+    margin-top: 0.8rem;
+}
+
+.time{
+    color: var(--text-black-white);
+    font-size: 1.2rem;
+    font-family: poppines, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--part1-background);
+    box-sizing: border-box;
+    padding: 0rem 1rem 0.4rem 1rem;
+    margin:0rem 0 0.1rem 0;
+    border-radius: 2px;
+}
+
+.startTime{
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.endTime{
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.line{
+    width: 100%;
+    border-bottom: 2px solid;
+    border-color: var(--part1-background);
+    box-sizing: border-box;
+}
+
+.admin{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: poppines, sans-serif;
+}
+
+.name>p{
+   box-sizing: border-box;
+   text-align: left;
+   font-weight: 600;
+   color: var(--text-black-white);
+}
+
+.name>span{
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    text-align: left;
+    color: rgb(113, 113, 113);
+}
+
+.share{
+    color: var(--text-black-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 50%;
+}
+
+.share:hover{
+   background-color: var(--part1-background);
+}
+
+
+/* ---------part2--------- */
+
+.checkIcon{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin: 1rem 0 2rem 0;
+    background-color:var(--button-background);
+    color: var(--text-secondary);
+}
+
+.p2title{
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.p2title>input{
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--black-text);
+    background: transparent;
+    font-weight: 700;
+    font-family: poppines, sans-serif;
+    font-size: 2.4rem;
+    padding-right:1rem;
+    border: none;
+    outline: none;
+}
+
+.p2description>textarea{
+    background: transparent;
+    width: 100%;
+    color: rgb(113, 113, 113);
+    font-size: 1.4rem;
+    font-family: poppines, sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    resize: unset;
+}
+
+.p2timeDiv{
+   color: var(--text-primary);
+   display: flex;
+}
+
+.p2time{
+    /* background-color: rgba(137, 43, 226, 0.212); */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 2rem 0;
+    width: 14rem;
+    font-size: 1.4rem;
+    font-family: poppines, sans-serif;
+}
+
+.p2endTime{
+    display: flex;
+    color: rgb(113, 113, 113);
+    align-items: center;
+}
+
+.p2endTime>p{
+    padding-left:0.5rem;
+    box-sizing: border-box;
+}
+
+.inputTime{
+/* background-color: rgba(0, 255, 255, 0.518); */
+flex: 1;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+gap: 1rem;
+box-sizing: border-box;
+padding: 2rem 0;
+font-size: 1.4rem;
+font-family: poppines, sans-serif;
+}
+
+.clockClick>p{
+    position: absolute;
+    pointer-events: none;
+    background-color: var(--part2-background);
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+.dateClick>p{
+    position: absolute;
+    pointer-events: none;
+    background-color: var(--part2-background);
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+.clockClick{
+    position: relative;
+}
+.dateClick{
+    position: relative;
+}
+
+
+.clockClick>input{
+    padding-left: 2rem;
+}
+.dateClick>input{
+    padding-left: 0rem;
+}
+
+.inputTime>div>input{
+    color: var(--text-primary);
+}
+
+input[type=time]::-webkit-datetime-edit-hour-field {
+    display: none;
+  }
+
+input[type=time]::-webkit-datetime-edit-colon-field {
+    display: none;
+  }
+input[type=time]::-webkit-datetime-edit-minute-field {
+    display: none;
+}
+input[type=time]::-webkit-datetime-edit-ampm-field {
+  display: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator{
+    display: block;
+    cursor: pointer;
+    filter: invert(48%) sepia(13%) saturate(0%) hue-rotate(130deg) brightness(var(--contrast)) contrast(100%);
+  }
+
+  input[type=date]::-webkit-datetime-edit-year-field {
+    display: none;
+  }
+  input[type=date]::-webkit-datetime-edit-day-field {
+    display: none;
+  }
+  input[type=date]::-webkit-datetime-edit-month-field {
+    display: none;
+  }
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    display: block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    filter: invert(48%) sepia(13%) saturate(0%) hue-rotate(130deg) brightness(var(--contrast)) contrast(100%);
+}
+
+
+.buttonDiv{
+    display:flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.buttonDiv>div{
+    font-family: poppines, sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: var(--text-secondary);
+    background-color:var(--button-background);
+    width: 20rem;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:720px){
+    .part1{
+      display: none;
+    }
+
+    .create{
+        flex-direction: column;
+    }
+
+    .part2{
+        width: 100%;
+        padding: 2rem;
+        height: 100%;
+        padding-top: 15%;
+    }
+
+    .checkIcon{
+        margin: 1rem 0;
+    }
+}

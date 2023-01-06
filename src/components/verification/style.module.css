@@ -1,0 +1,22 @@
+@font-face {
+    font-family: poppines;
+    src: url(../../Static/Poppins-Regular.ttf);
+}
+
+.home{
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-top: 7rem;
+    background-color: var(--part1-background);
+}
+
+.home>button{
+    display: block;
+    height: 3.4rem;
+    box-sizing: border-box; background-color: #6a52da; border-radius: 5px; color: white; padding: 8px 20px; font-family: sans-serif; font-weight: 500; border: 1.5px solid #6a52da; text-decoration: none; cursor: pointer;
+}
